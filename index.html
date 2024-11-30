@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+    <div id="head">
+        <div class="container">
+            <div class="head-container">
+
+                <form class="create_form">
+                    <input type="text" class="name" placeholder="Name">
+                    <input type="email" class="email" placeholder="Email">
+                    <button type="button" onclick="add()">Create</button>
+                </form>
+                <form class="update_form">
+                    <input type="text" hidden class="id">
+                    <input type="text" class="uname" placeholder="Name">
+                    <input type="email" class="uemail" placeholder="Email">
+                    <button type="button" onclick="update()">Update</button>
+                </form>
+                <div class="add_div">
+                    <button onclick="create()">Add +</button>
+                </div>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody class="data_table">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
